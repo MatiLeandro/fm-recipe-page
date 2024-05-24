@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --color-nutmeg: hsl(14, 45%, 36%);
+    --color-dark-raspberry: hsl(332, 51%, 32%);
+
+    --color-white: hsl(0, 0%, 100%);
+    --color-rose-white: hsl(330, 100%, 98%);
+    --color-eggshell: hsl(30, 54%, 90%);
+    --color-light-grey: hsl(30, 18%, 87%);
+    --color-wenge-brown: hsl(30, 10%, 34%);
+    --color-dark-charcoal: hsl(24, 5%, 18%);
+}
+
+* {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-wenge-brown);
+}
+
+h1, h2, h3 {
+    font-family: "Young Serif", sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    padding: 1rem 0;
+    color: var(--color-dark-charcoal);
+}
+
+h2 {
+    color: var(--color-nutmeg);
+    margin-bottom: 1rem;  
+}
+
+body {
+    background-color: var(--color-eggshell);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+header section,
+main section:not(:first-child) {
+    padding: 1rem 0;
+}
+
+p {
+    font-size: 16px;
+}
+
+li {
+    padding-left: 1.25rem;
+    margin: 0.50rem 1.25rem;
+}
+
+.container {
+    background-color: var(--color-white);
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    max-width: 700px;
+}
+
+.preparationTime {
+    background-color: var(--color-rose-white);
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.preparationTime h3, 
+.preparationTime li::marker{
+    font-family: "Outfit", sans-serif;
+    color: var(--color-dark-raspberry);
+}
+
+.ingredients li::marker,
+.instructions li::marker,
+.nutrition strong {
+    color: var(--color-nutmeg);
+}
+
+.instructions li::marker {
+    font-weight: bold;
+}
+
+.instructions {
+    border-top: 0.5px solid var(--color-light-grey);
+    border-bottom: 0.5px solid var(--color-light-grey);
+}
+
+.nutrition {
+    margin-bottom: 0;
+}
+
+.nutrition table {
+    table-layout: fixed;
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+}
+
+.nutrition td {
+    padding: 0.50rem 1.75rem;
+}
+
+.nutrition table tr:not(:last-child) {
+    border-bottom: 0.5px solid var(--color-light-grey);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 540px) {
+    
+    body {
+        background-color: var(--color-white);
+    }
+
+    .container {
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .introduction, main section{
+        margin: 0 2rem;
+    }
+
+    img {
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    header h1 {
+        margin: 0.5rem 0;
+    }
+
+    .attribution {
+        background-color: var(--color-white);
+    }
+}
